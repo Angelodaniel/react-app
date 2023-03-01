@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 
+function firstFunction(){
+  throw new Error("Oops this is not good");
+}
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={() => firstFunction()} />
       </header>
     </div>
   );
